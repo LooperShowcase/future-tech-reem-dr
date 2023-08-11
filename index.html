@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>niCe</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <h1>voice assistant</h1>
+
+    <div class="container">
+      <form
+        onsubmit="event.preventDefault(); conversationUserAdd(document.getElementById('input-text').value); openai_test();"
+      >
+        <input type="text" id="input-text" placeholder="ask something.." />
+        <button type="submit" id="submit-button">submit</button>
+      </form>
+
+      <button onclick="speak ()">init audio</button>
+      <div id="chat-container"></div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
